@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script async src="js/script.js"></script>
+</head>
+<body>
+  <header id="header">
+    <h1>Location</h1>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </header>
+
+  <nav id="main-nav">
+    <ul>
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="media.html">Pop Culture Fixations</a></li>
+      <li><a href="map.html">Google Maps</a></li>
+    </ul>
+  </nav>
+
+  <section id="map-container">
+    <div id="map"></div>
+  </section>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>
