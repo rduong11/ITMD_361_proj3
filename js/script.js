@@ -50,29 +50,29 @@ function nextSlide() {
 //map api
 function initMap(){
 
-  const mapDetails = {
-    center: {lat: -34.397, lng: 150.644},
+  const iitCoords = { lat: 41.831299, lng: -87.627274 };
+  const map = new google.maps.Map(document.getElementById('map'), {
+    center: iitCoords,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     streetViewControl: true,
     mapTypeControl: true,
     zoom: 10,
     minZoom: 10,
     maxZoom: 10
-  }
-  const map = new google.maps.Map(document.getElementById('map'), mapDetails);
+  });
 
   const marker = new google.maps.Marker({
     map: map,
-    position: {lat: -34.397, lng: 150.644},
+    position: iitCoords,
     title: "IIT"
   });
 
+  const iitString = '<h1>Illinois Institute of Technology</h1> <p>A private university in Chicago, IL. This is where I go to school! </p>';
   const infoWindow = new google.maps.InfoWindow({
-    content: "Where I go to school :D"
+    content: iitString
   });
 
   marker.addListener("click", function() {
     infoWindow.open(map, marker);
   });
 }
-
