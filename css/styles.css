@@ -126,13 +126,13 @@ body {
   align-items: center;
 }
 
-.image-box-container:hover .image{
+/* .image-box-container:hover .image{
   opacity: 0.5; 
 }
 
 .image-box-container:hover .middle{
   opacity: 1; 
-}
+} */
 
 .overlay-text {
   color: white;
@@ -147,12 +147,12 @@ body {
   padding-left: 250px; 
 }
 
-#hover-hint {
+/* #hover-hint {
   font-size: 12px;
   color: #3b2f2c;
   clear: right;
   margin-top: 10px;
-}
+} */
 
 .yt-vid {
   border: none;
@@ -242,4 +242,22 @@ body.dark-mode img {
   height: 500px;  
   width: 100%;    
   margin: 20px 0;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider img {
+  height: 200px;
+  width: 200px;
+  padding: 5px;
+  display: none;
+}
+
+img.displaySlide {
+  display: block;
 }
