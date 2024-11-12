@@ -193,3 +193,47 @@ body.dark-mode a:hover {
 body.dark-mode img {
   filter: brightness(0.8) !important; 
 }
+
+/* mobile phones */
+@media only screen and (max-width: 768px) {
+  #header {
+    padding: 25px; 
+  }
+  #header h1 {
+    font-size: 3em;
+    margin: 15px 
+  }
+  #main-nav ul {
+    padding: 25px;
+  }
+  .image-a {
+    float: inline-start;
+    width: 750px;
+  }
+  .yt-vid {
+    width: 750px;
+    height: 500px; 
+  }
+}
+
+/* tablets */
+@media only screen and (max-width: 800px) {
+  #header {
+    padding: 35px; 
+  }
+  #header h1 {
+    font-size: 4em;
+    margin: 30px; 
+  }
+  #main-nav ul {
+    padding: 45px;
+  }
+  .image-a {
+    float: inline-start;
+    width: 900px;
+  }
+  .yt-vid {
+    width: 900px;
+    height: 650px; 
+  }
+}
