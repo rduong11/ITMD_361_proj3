@@ -53,12 +53,7 @@ function initMap(){
   const iitCoords = { lat: 41.831299, lng: -87.627274 };
   const map = new google.maps.Map(document.getElementById('map'), {
     center: iitCoords,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    streetViewControl: true,
-    mapTypeControl: true,
     zoom: 10,
-    minZoom: 10,
-    maxZoom: 10
   });
 
   const marker = new google.maps.Marker({
